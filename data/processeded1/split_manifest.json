@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "fractions": {
+    "train": 0.9,
+    "val": 0.05,
+    "reserved": 0.05
+  },
+  "principals": {
+    "train": [
+      "AIDAUAIHXV4CNAGQAGUR",
+      "AROA42JB46CPCYYEPRI3:grafana",
+      "AROA7Q73AXVRIUDNO64I:jenkins-build",
+      "AROABSQ3F6CFTVHD4HTT:etl-worker-session",
+      "AROACGI544LF2WT7UA2J:config-scanner",
+      "AROACUH43CHVGE5SPZZG:api-handler-session",
+      "AROAH5O3RB72753FPGMB:image-resizer-session"
+    ],
+    "val": [
+      "AIDA2YHBKIG64KUM5OIH"
+    ],
+    "reserved": [
+      "AIDAR7MR2T3SWBHJCHDI"
+    ]
+  },
+  "event_counts": {
+    "train": 214844,
+    "val": 10165,
+    "reserved": 10067
+  }
+}

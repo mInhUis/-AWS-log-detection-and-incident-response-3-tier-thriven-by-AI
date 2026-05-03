@@ -1,0 +1,13 @@
+# Ignore all raw, processed, and RAG data files
+data/
+
+# Ignore compiled python bytecode
+**/__pycache__/
+*.pyc
+
+# Ignore future model weights/checkpoints
+models/
+
+# Ignore outputs and notebooks (unless you specifically want it to read a notebook)
+notebooks/
+report/

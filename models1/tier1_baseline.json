@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "per_principal": {
+    "AIDAUAIHXV4CNAGQAGUR": {
+      "mean": 12.007749557495117,
+      "std": 4.444704055786133,
+      "n": 9807
+    },
+    "AROA42JB46CPCYYEPRI3:grafana": {
+      "mean": 11.339885711669922,
+      "std": 6.979751110076904,
+      "n": 20807
+    },
+    "AROA7Q73AXVRIUDNO64I:jenkins-build": {
+      "mean": 11.490087509155273,
+      "std": 6.9782233238220215,
+      "n": 25826
+    },
+    "AROABSQ3F6CFTVHD4HTT:etl-worker-session": {
+      "mean": 11.487018585205078,
+      "std": 6.939078330993652,
+      "n": 41060
+    },
+    "AROACGI544LF2WT7UA2J:config-scanner": {
+      "mean": 11.507487297058105,
+      "std": 6.946931838989258,
+      "n": 35727
+    },
+    "AROACUH43CHVGE5SPZZG:api-handler-session": {
+      "mean": 11.480360984802246,
+      "std": 6.874855995178223,
+      "n": 41219
+    },
+    "AROAH5O3RB72753FPGMB:image-resizer-session": {
+      "mean": 11.477474212646484,
+      "std": 6.979111194610596,
+      "n": 40398
+    }
+  },
+  "global_mean_hour": 11.49724006652832,
+  "global_std_hour": 6.851342678070068,
+  "train_principal_count": 7
+}

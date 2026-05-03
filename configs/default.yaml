@@ -1,0 +1,56 @@
+# Default experiment configuration.
+#
+# Single source of truth for paths and hyperparameters. Code that touches disk
+# or GPU MUST allow each value here to be overridden by an environment variable
+# (CLAUDE.md §5.5). YAML keys map to env-var names by upper-casing and joining
+# with underscores, e.g. tier2.window_size  ->  TIER2_WINDOW_SIZE.
+#
+# Locked decisions live here so an accidental edit is visible in version control.
+
+paths:
+  raw_dir:        data/raw          # synthetic normal + flaws.cloud landed here
+  processed_dir:  data/processed    # Drain3 output, feature vectors, splits
+  rag_dir:        data/rag          # MITRE ATT&CK + flaws writeups for ChromaDB
+  models_dir:     models            # gitignored; isolation_forest.pkl, deeplog.pt, llama/
+
+# Tier 1 — Isolation Forest on per-entity-per-window aggregated features (CPU).
+# Trained on synthetic normal only (semi-supervised). Eliminates ~95% of volume.
+tier1:
+  algo: isolation_forest            # alt: pyod_ecod (set if IF underperforms on val)
+  contamination: 0.01               # expected fraction of anomalies in val mix
+  window_minutes: 60                # aggregation window per IAM principal
+  n_estimators: 200
+  random_state: 42
+
+# Tier 2 — DeepLog LSTM on Drain3 log-key sequences.
+# Mathematical, not semantic — operates on integer key IDs only (CLAUDE.md §3).
+tier2:
+  window_size: 10                   # sliding window of log keys
+  top_k: 9                          # tune on val: {3, 5, 7, 9}
+  embedding_dim: 32
+  hidden_size: 64
+  num_layers: 2
+  batch_size: 256
+  num_epochs: 30
+  learning_rate: 0.001
+  cuda_memory_max: 0.5              # fraction of VRAM cap, per CLAUDE.md §5.7
+
+# Tier 3 — Llama 3.1 8B 4-bit, served locally via Ollama (NOT transformers.pipeline).
+tier3:
+  model: llama3.1:8b-instruct-q4_K_M
+  backend: ollama
+  rag_top_k: 4
+  prompt_version: v1                # bump on every prompt change; see src/llm/prompts/
+
+# Train / val / test split contract (CLAUDE.md §9). Identity-based: no IAM
+# principal appears in more than one split, for both Tier 1 features and
+# Tier 2 sequences.
+split:
+  strategy: identity_based
+  val_frac: 0.15
+  test_frac: 0.15
+  random_state: 42
+
+runtime:
+  mode: mock                        # default mock per §13; pass --mode full to opt in
+  log_level: INFO

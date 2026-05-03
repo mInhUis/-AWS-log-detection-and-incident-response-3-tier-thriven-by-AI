@@ -1,0 +1,67 @@
+{
+  "step": "D",
+  "description": "Mix validation sets and regenerate labelled features",
+  "inputs": {
+    "synth_val_events": 10165,
+    "flaws_val_events": 4264
+  },
+  "outputs": {
+    "mixed_val_events": 14429,
+    "val_features_windows": 2753,
+    "attack_windows": 375,
+    "normal_windows": 2378
+  },
+  "principal_collision_checks": {
+    "synth_val_vs_synth_reserved": {
+      "val_count": 1,
+      "test_count": 1,
+      "overlap_count": 0,
+      "overlap_principals": [],
+      "status": "CLEAN"
+    },
+    "flaws_val_vs_flaws_test": {
+      "val_count": 13,
+      "test_count": 16,
+      "overlap_count": 9,
+      "overlap_principals": [
+        "811596193553",
+        "AIDA9BO36HFBHKGJAO9C1",
+        "AIDADO2GQD0K8TEF7KW1V",
+        "AROAMY611GPC0EPB1P0F9:4032461535040776536",
+        "AROANYWQUYSW31GGK0R08:cloudsploit_scan",
+        "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+        "AROAUB2AA5FQRGAHITW4A:cloudaux",
+        "AROAYX2TBUO06ICD7QCQ9:donald",
+        "unknown"
+      ],
+      "status": "EXPECTED_OVERLAP",
+      "note": "Overlap is expected — levels 3+4 vs 2+5 partition by attack scenario, not identity"
+    },
+    "flaws_val_vs_synth_reserved": {
+      "flaws_val_count": 13,
+      "synth_test_count": 1,
+      "overlap_count": 0,
+      "overlap_principals": [],
+      "status": "CLEAN"
+    },
+    "flaws_test_vs_synth_val": {
+      "flaws_test_count": 16,
+      "synth_val_count": 1,
+      "overlap_count": 0,
+      "overlap_principals": [],
+      "status": "CLEAN"
+    }
+  },
+  "label_distribution": {
+    "attack_pct": 13.621503814021068,
+    "normal_pct": 86.37849618597893
+  },
+  "sanity_checks": {
+    "is_attack_window_exists": true,
+    "attack_count_nonzero": 1,
+    "label_source_values": {
+      "synth_normal": 10165,
+      "flaws_cloud": 4264
+    }
+  }
+}

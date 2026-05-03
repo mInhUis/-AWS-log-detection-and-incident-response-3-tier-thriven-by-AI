@@ -1,0 +1,50 @@
+# Data — raw and intermediate artefacts are large and/or sensitive.
+# We ignore the contents but keep the directories themselves via .gitkeep.
+data/raw/*
+data/processed/*
+data/rag/*
+data/*.jsonl
+data/*.json
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/rag/.gitkeep
+!data/README.md
+
+# Model checkpoints and weights — same trick: ignore contents, keep dirs.
+models/*
+!models/.gitkeep
+!models/llama/
+models/llama/*
+!models/llama/.gitkeep
+*.pt
+*.pkl
+*.gguf
+*.safetensors
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual envs / secrets
+.venv/
+env/
+venv/
+.env
+
+# Colab / Drive temp files
+*.colab
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local agent / editor artefacts (never committed)
+.claude/
+.idea/
+.vscode/

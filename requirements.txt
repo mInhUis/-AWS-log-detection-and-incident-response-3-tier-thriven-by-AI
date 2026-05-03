@@ -1,0 +1,37 @@
+# Python 3.11 target.
+# Pinned to compatible-release (~=) so patch upgrades are allowed but minor bumps are not —
+# keeps Colab and laptop environments in sync without surprise API changes.
+
+# --- Tier 1: Isolation Forest / PyOD on aggregated entity-window features (CPU) ---
+scikit-learn~=1.5
+pyod~=2.0
+numpy~=1.26
+pandas~=2.2
+
+# --- Tier 2: DeepLog LSTM on Drain3 log-key sequences ---
+# CPU wheel locally; the same line resolves to a CUDA build on Colab.
+torch~=2.3
+drain3~=0.9
+
+# --- Tier 3: Llama 3.1 8B 4-bit, served via Ollama / llama.cpp (NOT transformers.pipeline) ---
+ollama~=0.3
+# llama-cpp-python is optional — only if Ollama is unavailable on the demo machine.
+# llama-cpp-python~=0.2
+
+# --- RAG (Day 4): ChromaDB + local embedding model ---
+chromadb~=0.5
+sentence-transformers~=3.0
+
+# --- Evaluation + dashboard ---
+matplotlib~=3.9
+seaborn~=0.13
+streamlit~=1.36
+
+# --- Config / utility ---
+pyyaml~=6.0
+tqdm~=4.66
+
+# --- Dev ---
+pytest~=8.2
+ruff~=0.6
+mypy~=1.11
