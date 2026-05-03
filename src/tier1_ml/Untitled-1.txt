@@ -1,0 +1,179 @@
+Apply the resource-based labelling rule to the full flaws.cloud
+dataset, write per-level labelled JSONL files, freeze the val/test
+split decision in a manifest, and check IAM principal collisions
+with synth_val. Do NOT mix anything into synth_val yet — that's
+the next task.
+
+Before writing any code, read CLAUDE.md (§5, §9) and read
+src/preprocessing/ingest.py to confirm the load_events function
+signature is unchanged from earlier work.
+
+Locked decisions (do NOT modify):
+  - Keep levels: 2, 3, 4, 5
+  - Drop levels: 1 (too thin: 8 events), 6 (too contaminated:
+    3.5-year span, 58 principals, post-attack credential reuse)
+  - Val: levels 3 + 4 (5,828 events)
+  - Test: levels 2 + 5 (5,599 events)
+  - Within each kept level, retain ALL resource-matched events
+    regardless of executing principal.
+
+Goal:
+Produce four artefacts:
+  1. data/processed/flaws_cloud_val.jsonl — events from levels 3, 4.
+  2. data/processed/flaws_cloud_test.jsonl — events from levels 2, 5.
+  3. data/processed/flaws_cloud_split_manifest.json — frozen split
+     decision with full justification.
+  4. A summary of IAM principal collisions between flaws_cloud_val
+     and synthetic_val.
+
+Steps:
+
+Step 1 — Reuse the labelling rule from the diagnostic.
+The diagnostic at scripts/diagnose_flaws_cloud.py already implements
+the resource-match rule (Rule 1, with Rule 1b list-response
+exclusion). Refactor that rule into a reusable function in a new
+module: src/preprocessing/flaws_cloud_label.py. The function:
+
+  def label_event(event: dict) -> str:
+      """Return one of: 'level_2', 'level_3', 'level_4', 'level_5',
+      'level_1', 'level_6', 'ambiguous', 'level6_principal_only',
+      'backup_principal', 'flaws_principal', or 'background'."""
+
+Match the diagnostic's behaviour exactly. Add type hints, docstring
+referencing the methodology decision, Final constants for the regex.
+Do not change the rule itself.
+
+Wait for my approval before Step 2.
+
+Step 2 — Write the split script.
+Create scripts/run_flaws_cloud_split.py that:
+  - Streams the raw 1.94M-event flaws.cloud JSONL file (path via
+    --raw-path argument with sensible default; check what
+    SYNTHETIC_NORMAL_PATH pattern is used in run_day2.py and follow
+    the same convention).
+  - For each event:
+    * Apply label_event() from flaws_cloud_label.
+    * If label is 'level_3' or 'level_4': write to
+      data/processed/flaws_cloud_val.jsonl.
+    * If label is 'level_2' or 'level_5': write to
+      data/processed/flaws_cloud_test.jsonl.
+    * Otherwise: skip (do not write to either file).
+  - Track per-level event counts written, malformed-line counts,
+    and total events processed.
+  - DO NOT add a _source field to the events here. That happens
+    when ingest.load_events reads these files later, with
+    source="flaws_cloud" passed explicitly.
+  - Use mock mode default (§5 #6): --mode mock caps at 5,000 events,
+    --mode full processes all 1.94M. Default to mock.
+  - Use --force flag to overwrite existing outputs (§5 #8).
+
+Constraints:
+- Stream-process. Do not load 1.94M events into memory at once.
+- Match §5 conventions: Final constants, type hints, docstring,
+  argparse, env-var-overridable paths.
+- Output JSONL files: one event per line, original event JSON
+  preserved verbatim (do NOT reformat, do NOT add fields).
+
+Step 3 — Run the split script in full mode.
+After Step 2 is reviewed, run:
+  python scripts/run_flaws_cloud_split.py --mode full --force
+Report:
+  - Events written to flaws_cloud_val.jsonl per level (expected:
+    level_3 ≈ 3119, level_4 ≈ 2709, total ≈ 5828).
+  - Events written to flaws_cloud_test.jsonl per level (expected:
+    level_2 ≈ 2945, level_5 ≈ 2654, total ≈ 5599).
+  - Total events skipped.
+  - Malformed-line count.
+If actual counts differ from expected by more than 5 events, stop
+and investigate. The diagnostic already counted these — they should
+match exactly.
+
+Step 4 — Check IAM principal collisions.
+Write a small one-off check script (or just inline Python) that:
+  - Loads principal IDs from data/processed/flaws_cloud_val.jsonl
+    (use load_events with source="flaws_cloud").
+  - Loads principal IDs from data/processed/synthetic_val.jsonl
+    (use load_events with default source).
+  - Reports overlap.
+  - Per §9, any collision is identity leakage and must be flagged.
+
+Note on principal identity in flaws.cloud: the principal_id in
+ingest.py likely comes from userIdentity.principalId or arn. flaws.
+cloud uses things like '811596193553' (Root account number),
+'AIDA9BO36HFBHKGJAO9C1' (backup IAMUser), and 'AIDADO2GQD0K8TEF7KW1V'
+(Level6 IAMUser). Synthetic principals are generated names. Real
+collisions are unlikely but not impossible — if synthetic-generator
+patterns happen to produce numeric strings, they could overlap with
+the AWS account number. Flag any overlap, do not silently proceed.
+
+If collisions exist:
+  - Do NOT apply any rename or fix in this task.
+  - Document them in the manifest (Step 5).
+  - The next task (mixing into synth_val) will handle the rename.
+
+Step 5 — Write the frozen manifest.
+Create data/processed/flaws_cloud_split_manifest.json:
+{
+  "frozen_at": "<ISO timestamp at write time>",
+  "labelling_rule": {
+    "type": "resource_based",
+    "regex_pattern": "level([1-6])(?:[-/.]|\\b)",
+    "scanned_fields": [
+      "requestParameters.bucketName",
+      "requestParameters.userName",
+      "resources[].ARN"
+    ],
+    "list_response_exclusion": "responseElements list-of-resources fields are NOT scanned to avoid spurious ambiguity"
+  },
+  "kept_levels": [2, 3, 4, 5],
+  "dropped_levels": {
+    "1": "Insufficient signal (8 events in 1.94M corpus)",
+    "6": "Longitudinal contamination: 12,644 events spanning 3.5 years across 58 principals; 49% executed by Level6 IAMUser indicating post-attack credential reuse rather than a coherent attack scenario."
+  },
+  "val_levels": [3, 4],
+  "test_levels": [2, 5],
+  "val_event_count": <actual int from Step 3>,
+  "test_event_count": <actual int from Step 3>,
+  "principal_collisions_with_synth_val": [<list, possibly empty>],
+  "principal_collision_resolution": "If non-empty, the next task (mix into synth_val) must rename flaws.cloud principals before mixing.",
+  "raw_data_path": "<path used>",
+  "diagnostic_reference": "data/processed/flaws_cloud_diagnostic.json",
+  "rationale": "Levels 1 and 6 dropped per diagnostic findings. Levels 3+4 → val for hyperparameter tuning; 2+5 → test for final reporting. Within each level, all resource-matched events retained regardless of executing principal — resource-targeted attribution. §9 forbids modification of this manifest after writing."
+}
+
+Per §9: this file is FROZEN once written. The next task and all
+subsequent work must read from it, not re-derive the split.
+
+Step 6 — Summary.
+Report:
+  - Files created (the four artefacts above).
+  - Actual per-level counts vs expected.
+  - Principal collision status.
+  - Anything anomalous noticed.
+
+Constraints throughout:
+- Do NOT modify ingest.py, features.py, train.py, detect.py,
+  run_day2.py, or any other existing module.
+- Do NOT regenerate train_features.parquet or val_features.parquet.
+- Do NOT retrain Tier 1.
+- Do NOT mix flaws.cloud events into synth_val. That's the next task.
+
+Wait for my approval after Step 1 (rule refactor) and Step 2 (script
+written, smoke-tested). Two gates because each is a checkpoint where
+errors compound.
+
+Step 3 — Smoke test in mock mode only.
+Run: python scripts/run_flaws_cloud_split.py --mode mock --force
+Verify the script doesn't crash, output paths are created, and counts
+look plausible (small but non-zero). Report mock output. Then STOP.
+Do NOT run --mode full. The user will run the full pass themselves
+and report results before we proceed to manifest writing and
+principal collision checking.
+
+import pandas as pd
+
+# Load your newly mixed validation features
+df = pd.read_parquet("data/processed/val_features.parquet")
+
+# Show the exact count of normal vs. attack windows
+print(df['is_attack_window'].value_counts())

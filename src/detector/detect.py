@@ -35,7 +35,7 @@ from __future__ import annotations
 
 import torch
 
-from src.detector.deeplog import DeepLogModel
+from deeplog import DeepLogModel
 
 
 def detect_anomalies(
@@ -116,7 +116,8 @@ def detect_anomalies(
     max_key_in_data: int = max(
         (key for seq in sequences for key in seq), default=-1,
     )
-    if max_key_in_data >= model_num_keys:
+    # Changed >= to > so the OOV_KEY (which equals model_num_keys) is allowed
+    if max_key_in_data > model_num_keys:
         raise ValueError(
             f"Stale model: the sequences contain log key "
             f"{max_key_in_data} but the model's embedding table only "
@@ -144,6 +145,16 @@ def detect_anomalies(
             for i in range(window_size, seq_len):
                 window: list[int] = seq[i - window_size : i]
                 true_key: int = seq[i]
+
+                if true_key >= model_num_keys:
+                    flags[i] = True
+                    continue
+                    
+                # --- 2. Past Window Masking ---
+                # If past events in the window were unknown, we clamp them to 0 
+                # so the PyTorch Embedding layer doesn't crash. 
+                # This lets the LSTM evaluate if the CURRENT event is normal.
+                safe_window = [k if k < model_num_keys else 0 for k in window]
 
                 # window_tensor: (1, window_size) int64
                 window_tensor: torch.Tensor = torch.tensor(

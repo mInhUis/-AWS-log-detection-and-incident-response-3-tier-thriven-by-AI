@@ -102,7 +102,7 @@ DEFAULT_HIDDEN_SIZE: Final[int] = 64
 DEFAULT_NUM_LAYERS: Final[int] = 2
 DEFAULT_DROPOUT: Final[float] = 0.1
 DEFAULT_LR: Final[float] = 1e-3
-DEFAULT_BATCH_SIZE: Final[int] = 64
+DEFAULT_BATCH_SIZE: Final[int] = 1024
 DEFAULT_EPOCHS: Final[int] = 50
 DEFAULT_SEED: Final[int] = 42
 
