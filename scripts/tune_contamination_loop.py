@@ -79,7 +79,7 @@ TUNED_MODEL_PATH: Final[Path] = MODELS_DIR / "isolation_forest_tuned.pkl"
 METRICS_PATH: Final[Path] = DATA_PROCESSED / "tier1_metrics_val.json"
 
 # ── Sweep defaults ────────────────────────────────────────────────────────────
-DEFAULT_CONTAMINATION_VALUES: Final[tuple[float, ...]] = (0.01, 0.02, 0.05, 0.10)
+DEFAULT_CONTAMINATION_VALUES: Final[tuple[float, ...]] = (0.01, 0.02, 0.05, 0.10, 0.20)
 ALERT_RATE_CAP: Final[float] = 0.06       # §3 cost-cascade contract + 1% slack
 N_ESTIMATORS: Final[int] = 100
 RANDOM_STATE: Final[int] = 42

@@ -75,7 +75,7 @@ MODELS_DIR: Final[Path] = Path(
 # ── Derived artifact paths ---------------------------------─────────
 BASELINE_PATH: Final[Path] = MODELS_DIR / "tier1_baseline.json"
 TRAIN_FEATURES_PATH: Final[Path] = PROCESSED_DIR / "train_features.parquet"
-VAL_FEATURES_PATH: Final[Path] = PROCESSED_DIR / "val_features.parquet"
+VAL_FEATURES_PATH: Final[Path] = PROCESSED_DIR / "val_features_normal.parquet"
 MODEL_PATH: Final[Path] = MODELS_DIR / "isolation_forest.pkl"
 ALERTS_PATH: Final[Path] = PROCESSED_DIR / "tier1_alerts_val.jsonl"
 

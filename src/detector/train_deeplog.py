@@ -77,7 +77,7 @@ TRAIN_KEYS_PATH: Final[Path] = Path(
 VAL_KEYS_PATH: Final[Path] = Path(
     os.environ.get(
         "VAL_KEYS_PATH",
-        str(_PROJECT_ROOT / "data" / "processeded1" / "val_log_keys.json"),
+        str(_PROJECT_ROOT / "data" / "processeded1" / "val_log_keys1.json"),
     )
 )
 MODEL_DIR: Final[Path] = Path(
