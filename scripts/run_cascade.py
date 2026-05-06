@@ -72,13 +72,13 @@ from src.tier1_ml.baseline import load_baseline
 _IF_PATH: Final[Path] = Path(
     os.environ.get(
         "ISOLATION_FOREST_PATH",
-        str(_PROJECT_ROOT / "models" / "isolation_forest.pkl"),
+        str(_PROJECT_ROOT / "models1" / "isolation_forest_tuned_threshold.pkl"),
     )
 )
 _BASELINE_PATH: Final[Path] = Path(
     os.environ.get(
         "TIER1_BASELINE_PATH",
-        str(_PROJECT_ROOT / "models" / "tier1_baseline.json"),
+        str(_PROJECT_ROOT / "models1" / "tier1_baseline.json"),
     )
 )
 _DEEPLOG_PATH: Final[Path] = Path(
@@ -90,13 +90,13 @@ _DEEPLOG_PATH: Final[Path] = Path(
 _DRAIN_STATE_PATH: Final[Path] = Path(
     os.environ.get(
         "DRAIN_STATE_PATH",
-        str(_PROJECT_ROOT / "data" / "processeded1" / "drain3_state.json"),
+        str(_PROJECT_ROOT / "models1" / "deeplog" / "drain3_state.json"),
     )
 )
 _CASCADE_INPUT: Final[Path] = Path(
     os.environ.get(
         "CASCADE_INPUT",
-        str(_PROJECT_ROOT / "data" / "processed" / "val_events.jsonl"),
+        str(_PROJECT_ROOT / "data" / "processeded1" / "synth_val_mixed.jsonl"),
     )
 )
 _CASCADE_OUTPUT: Final[Path] = Path(
@@ -309,9 +309,10 @@ def _build_parser() -> argparse.ArgumentParser:
 
 def _print_metrics_table(metrics: dict) -> None:
     """Print a formatted cost/latency table for the thesis evaluation chapter."""
-    print("\n" + "═" * 62)
-    print("  CASCADE METRICS  (fill values into thesis cost table §3)")
-    print("═" * 62)
+    sep = "=" * 62
+    print("\n" + sep)
+    print("  CASCADE METRICS  (fill values into thesis cost table S3)")
+    print(sep)
 
     # ---- Volume counts ---------------------------------------------------
     rows = [
@@ -345,7 +346,7 @@ def _print_metrics_table(metrics: dict) -> None:
 
     if metrics.get("skip_tier1"):
         print("\n  [NOTE] Tier 1 was skipped (ablation mode --skip-tier1).")
-    print("═" * 62 + "\n")
+    print(sep + "\n")
 
 
 def _save_reports(reports: list[dict], output_dir: Path) -> None:
