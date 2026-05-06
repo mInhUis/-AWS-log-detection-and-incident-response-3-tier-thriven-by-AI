@@ -1,0 +1,187 @@
+{
+  "session_id": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+  "report_text": "## 1. Incident Summary\n\nDeepLog flagged 20 anomalous event(s) in session AROAUB2AA5FQRGAHITW4A:cloudaux.  The flagged API calls deviate from the normal CloudTrail activity baseline learned during training on synthetic normal data.\n\n## 2. Anomaly Analysis\n\n  - [2017-05-26 23:00:24+00:00] **GetBucketReplication** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:00:24+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:00:24+00:00] **GetBucketCors** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:00:24+00:00] **GetBucketTagging** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:00:25+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:00:25+00:00] **GetBucketTagging** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:15:21+00:00] **GetBucketCors** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:15:21+00:00] **GetBucketReplication** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:15:22+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:15:22+00:00] **GetBucketTagging** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:15:22+00:00] **GetBucketReplication** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:15:22+00:00] **GetBucketCors** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:15:23+00:00] **GetBucketTagging** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:15:23+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:30:23+00:00] **GetBucketReplication** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:30:23+00:00] **GetBucketTagging** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:30:23+00:00] **GetBucketCors** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:30:23+00:00] **GetBucketReplication** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:30:23+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 23:30:24+00:00] **GetBucketCors** from 255.253.125.115 (identity: AROAUB2AA5FQRGAHITW4A:cloudaux)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n\n## 3. Severity Assessment\n\n**High** \u2014 31% of session events are anomalous, indicating a sustained deviation from the normal behaviour baseline.\n\n## 4. Attack Pattern Classification\n\nNo direct MITRE ATT&CK mapping identified from event names alone.  Manual review recommended.\n\n## 5. Recommended Mitigation\n\n1. Immediately review IAM activity for the affected identities in the AWS Console.\n2. Rotate or revoke access keys associated with the flagged ARNs.\n3. Enable CloudTrail log-file validation if not already active.\n4. Restrict overly permissive IAM policies identified in the flagged events.\n5. Escalate to the security operations team for deeper forensic investigation.\n\n---\n**[MOCK MODE \u2014 report generated without Llama-3 inference.  Requires analyst review before any action.]**",
+  "flagged_events": [
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    }
+  ],
+  "anomaly_ratio": 0.3076923076923077
+}

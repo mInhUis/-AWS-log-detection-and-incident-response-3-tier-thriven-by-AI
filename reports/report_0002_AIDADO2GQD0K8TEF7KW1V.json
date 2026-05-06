@@ -1,0 +1,43 @@
+{
+  "session_id": "AIDADO2GQD0K8TEF7KW1V",
+  "report_text": "## 1. Incident Summary\n\nDeepLog flagged 4 anomalous event(s) in session AIDADO2GQD0K8TEF7KW1V.  The flagged API calls deviate from the normal CloudTrail activity baseline learned during training on synthetic normal data.\n\n## 2. Anomaly Analysis\n\n  - [2017-05-26 20:40:58+00:00] **GetBucketTagging** from 255.253.125.115 (identity: AIDADO2GQD0K8TEF7KW1V)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 20:40:58+00:00] **GetBucketReplication** from 255.253.125.115 (identity: AIDADO2GQD0K8TEF7KW1V)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 20:40:59+00:00] **GetBucketTagging** from 255.253.125.115 (identity: AIDADO2GQD0K8TEF7KW1V)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-26 20:41:00+00:00] **GetBucketReplication** from 255.253.125.115 (identity: AIDADO2GQD0K8TEF7KW1V)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n\n## 3. Severity Assessment\n\n**Low** \u2014 Only 7% of events are anomalous; this may be benign noise but warrants monitoring.\n\n## 4. Attack Pattern Classification\n\nNo direct MITRE ATT&CK mapping identified from event names alone.  Manual review recommended.\n\n## 5. Recommended Mitigation\n\n1. Immediately review IAM activity for the affected identities in the AWS Console.\n2. Rotate or revoke access keys associated with the flagged ARNs.\n3. Enable CloudTrail log-file validation if not already active.\n4. Restrict overly permissive IAM policies identified in the flagged events.\n5. Escalate to the security operations team for deeper forensic investigation.\n\n---\n**[MOCK MODE \u2014 report generated without Llama-3 inference.  Requires analyst review before any action.]**",
+  "flagged_events": [
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 20:40:58+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AIDADO2GQD0K8TEF7KW1V",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 20:40:58+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AIDADO2GQD0K8TEF7KW1V",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 20:40:59+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AIDADO2GQD0K8TEF7KW1V",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 20:41:00+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AIDADO2GQD0K8TEF7KW1V",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    }
+  ],
+  "anomaly_ratio": 0.06896551724137931
+}

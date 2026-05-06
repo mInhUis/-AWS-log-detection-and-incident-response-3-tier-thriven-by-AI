@@ -1,0 +1,2365 @@
+{
+  "session_id": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+  "report_text": "This appears to be a log file from an AWS CloudTrail, which is used for auditing and monitoring the activities within an AWS account.\n\nThe logs show repeated attempts by a single IP address (`255.253.125.115`) to access various AWS services, specifically:\n\n1. GetBucketReplication: This operation retrieves information about the replication configuration of an Amazon S3 bucket.\n2. GetBucketCors: This operation retrieves the Cross-Origin Resource Sharing (CORS) configuration for an Amazon S3 bucket.\n3. GetBucketLifecycle: This operation retrieves the lifecycle configuration of an Amazon S3 bucket, which defines actions to be taken on objects based on their age or other conditions.\n\nThe logs show that these operations are being attempted repeatedly over a period of time, with some attempts occurring at regular intervals (e.g., every 30 minutes).\n\nThere is no indication in the logs of any errors or issues related to these requests. However, it's possible that this IP address may be attempting to access AWS services without authorization or as part of an unauthorized activity.\n\nTo investigate further, you can:\n\n1. Check if there are any IAM policies or permissions set up for the account that would allow this IP address to access these services.\n2. Review the AWS CloudTrail logs for any other suspicious activities related to this IP address.\n3. Investigate the source of this IP address and determine whether it's a legitimate user or an unauthorized entity.\n\nIf you're concerned about security, I recommend reaching out to your AWS support team for further assistance.",
+  "flagged_events": [
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-26 23:45:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:45:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-26 23:45:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-26 23:45:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-26 23:45:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 00:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 00:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 00:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 00:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 00:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 00:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 00:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 00:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 00:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 00:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 00:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 00:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 00:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 00:15:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 00:15:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 00:15:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 00:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 00:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 00:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 00:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 00:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 00:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 00:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 00:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 00:45:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 00:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 00:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 00:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 00:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 00:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 00:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 00:45:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 01:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 01:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 01:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 01:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 01:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 01:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 01:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 01:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 01:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 01:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 01:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 01:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 01:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 01:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 01:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 01:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 01:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 01:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 01:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 01:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 01:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 01:30:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 01:30:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 01:30:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 01:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 01:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 01:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 01:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 01:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 01:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 01:45:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 01:45:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 02:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 02:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 02:00:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 02:00:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 02:00:27+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 02:00:27+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 02:00:27+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 02:00:28+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 02:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 02:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 02:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 02:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 02:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 02:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 02:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 02:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 02:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 02:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 02:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 02:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 02:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 02:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 02:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 02:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 02:45:28+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 02:45:28+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 02:45:28+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 02:45:28+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 02:45:29+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 02:45:29+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 02:45:29+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 02:45:29+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 03:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 03:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 03:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 03:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 03:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 03:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 03:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 03:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 03:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 03:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 03:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 03:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 03:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 03:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 03:15:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 03:15:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 03:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 03:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 03:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 03:30:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 03:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 03:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 03:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 03:30:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 03:45:20+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 03:45:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 03:45:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 03:45:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 03:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 03:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 03:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 03:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 04:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 04:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 04:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 04:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 04:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 04:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 04:00:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 04:00:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 04:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 04:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 04:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 04:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 04:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 04:15:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 04:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 04:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 04:30:20+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 04:30:20+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 04:30:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 04:30:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 04:30:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 04:30:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 04:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 04:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 04:45:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 04:45:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 04:45:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 04:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 04:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 04:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 04:45:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 04:45:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 05:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 05:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 05:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 05:00:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 05:00:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 05:00:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 05:00:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 05:00:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 05:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 05:15:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 05:15:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 05:15:25+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 05:15:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 05:15:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 05:15:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 05:15:27+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 05:30:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 05:30:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 05:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 05:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 05:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 05:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 05:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 05:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 05:45:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 05:45:26+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 05:45:27+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 05:45:27+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 05:45:27+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 05:45:28+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 05:45:28+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 05:45:28+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 06:00:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 06:00:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 06:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 06:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 06:00:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 06:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 06:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 06:00:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 06:15:20+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 06:15:20+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 06:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 06:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 06:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 06:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 06:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 06:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 06:30:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 06:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 06:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 06:30:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 06:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 06:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 06:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 06:30:23+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 15:00:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 15:00:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 15:00:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 15:00:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 15:00:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 15:00:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 15:00:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 15:00:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 15:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 15:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 15:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 15:15:21+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-27 15:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-27 15:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-27 15:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-27 15:15:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "AROAUB2AA5FQRGAHITW4A:cloudaux",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    }
+  ],
+  "anomaly_ratio": 0.3589041095890411
+}

@@ -1,0 +1,1105 @@
+{
+  "session_id": "811596193553",
+  "report_text": "This is a log file from Amazon S3, showing all the API calls made to this bucket over time. Here's a breakdown of what I see:\n\n**Early activity**\n\nThe first few entries show API calls related to setting up and configuring the bucket:\n\n* `GetBucketReplication`: This call was made on March 14th, which suggests that replication was set up for the bucket.\n* `GetBucketLifecycle`: Similar to the previous entry, this suggests that lifecycle policies were configured for the bucket.\n\n**Tagging-related activity**\n\nThere are several entries related to tagging:\n\n* `GetBucketTagging`: This call is repeated multiple times throughout 2017 and again in 2020. It's likely that someone was trying to set up or update tags on the bucket.\n* `NoSuchTagSet` errors: These errors suggest that there were issues with setting up or updating tags.\n\n**Encryption-related activity**\n\nThere are a few entries related to encryption:\n\n* `GetBucketPublicAccessBlock`: This call is repeated multiple times in 2020. It's likely that someone was trying to set up or update public access block settings for the bucket.\n* `GetBucketEncryption`: Similar to the previous entry, this suggests that encryption settings were being updated.\n\n**Other activity**\n\nThere are a few other entries scattered throughout the log:\n\n* `GetBucketWebsite` (March 14th): This call was made when someone tried to set up or update the website configuration for the bucket.\n* `GetBucketCors` (multiple times in 2017 and again in 2020): Similar to the previous entry, this suggests that CORS settings were being updated.\n\n**Recent activity**\n\nThe most recent entries are related to public access block settings:\n\n* `GetBucketPublicAccessBlock`: These calls were made on October 6th, which is relatively recently. It's likely that someone was trying to set up or update public access block settings for the bucket.\n\nOverall, this log suggests that there have been several attempts over time to configure and manage various aspects of this S3 bucket, including replication, lifecycle policies, tags, encryption, website configuration, CORS settings, and public access block settings.",
+  "flagged_events": [
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:38:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:38:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchWebsiteConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:26:10+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:26:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:26:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:26:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:26:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:46+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:50+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:50+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:50+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:50+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:53+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:53+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:53+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:58+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:58+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:58+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:58+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketPolicy",
+      "timestamp": "2017-02-26 18:28:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "MalformedPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:28:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:49:03+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchWebsiteConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:49:10+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:49:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:49:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:49:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-03-14 03:00:02+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-03-14 03:00:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-03-14 03:00:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-03-14 03:00:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-03-14 03:00:19+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-03-14 03:00:19+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-03-14 03:00:19+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-03-14 03:00:19+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:09:27+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:09:27+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:20:52+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:20:52+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:20:55+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-05-22 18:20:55+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "ServerSideEncryptionConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:20:55+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:20:55+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-05-22 18:21:09+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "ServerSideEncryptionConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:42:08+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:42:08+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:50:23+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-05-22 18:50:23+00:00",
+      "source_ip": "252.1.22.60",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-10-06 21:11:06+00:00",
+      "source_ip": "3.1.254.37",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-10-06 21:11:06+00:00",
+      "source_ip": "3.1.254.37",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchPublicAccessBlockConfiguration",
+      "target_resource": null
+    }
+  ],
+  "anomaly_ratio": 0.27539503386004516
+}

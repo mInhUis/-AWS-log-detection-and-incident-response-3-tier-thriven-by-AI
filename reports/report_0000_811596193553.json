@@ -1,0 +1,970 @@
+{
+  "session_id": "811596193553",
+  "report_text": "## 1. Incident Summary\n\nDeepLog flagged 107 anomalous event(s) in session 811596193553.  The flagged API calls deviate from the normal CloudTrail activity baseline learned during training on synthetic normal data.\n\n## 2. Anomaly Analysis\n\n  - [2017-02-12 20:38:22+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:38:22+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:39:02+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:39:02+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:39:02+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:39:02+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:39:02+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:39+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:39+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:39+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:39+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:39+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:41+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:41+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:41+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:41+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:43:41+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:57:17+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:57:17+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:57:17+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:57:17+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-12 20:57:17+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:25:48+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:25:48+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:25:48+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:25:48+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:25:48+00:00] **GetBucketWebsite** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:25:48+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:26:10+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:26:11+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:26:11+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:26:11+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:26:11+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:46+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:47+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:47+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:47+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:47+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:47+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:47+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:47+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:47+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:48+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:49+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:49+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:49+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:49+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:49+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:49+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:49+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:49+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:50+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:50+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:50+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:50+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:51+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:51+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:51+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:51+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:51+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:51+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:51+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:51+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:52+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:53+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:53+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:53+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:58+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:58+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:58+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:27:58+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:28:24+00:00] **PutBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:28:41+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:03+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:04+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:04+00:00] **GetBucketPolicy** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:04+00:00] **GetBucketWebsite** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:04+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:04+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:10+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:11+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:11+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-02-26 18:49:11+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-14 03:00:02+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-14 03:00:02+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-14 03:00:02+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-14 03:00:02+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-14 03:00:19+00:00] **GetBucketCors** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-14 03:00:19+00:00] **GetBucketLifecycle** from 255.253.125.115 (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-14 03:00:19+00:00] **GetBucketReplication** from AWS Internal (identity: 811596193553)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-14 03:00:19+00:00] **GetBucketTagging** from 255.253.125.115 (identity: 811596193553)\n    Template: `GetBucketTagging s3.amazonaws.com NoSuchTagSet`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n\n## 3. Severity Assessment\n\n**High** \u2014 33% of session events are anomalous, indicating a sustained deviation from the normal behaviour baseline.\n\n## 4. Attack Pattern Classification\n\nMITRE ATT&CK: T1530 (Data from Cloud Storage Object) \u2014 Collection / Data Exfiltration.\n\n## 5. Recommended Mitigation\n\n1. Immediately review IAM activity for the affected identities in the AWS Console.\n2. Rotate or revoke access keys associated with the flagged ARNs.\n3. Enable CloudTrail log-file validation if not already active.\n4. Restrict overly permissive IAM policies identified in the flagged events.\n5. Escalate to the security operations team for deeper forensic investigation.\n\n---\n**[MOCK MODE \u2014 report generated without Llama-3 inference.  Requires analyst review before any action.]**",
+  "flagged_events": [
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:38:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:38:22+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-12 20:39:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-12 20:43:39+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-12 20:43:41+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-12 20:57:17+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchWebsiteConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:25:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:26:10+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:26:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:26:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:26:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:26:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:46+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:47+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:48+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:49+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:50+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:50+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:50+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:50+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:51+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:52+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:53+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:53+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:53+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:27:58+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:27:58+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:27:58+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:27:58+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketPolicy",
+      "timestamp": "2017-02-26 18:28:24+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "MalformedPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:28:41+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:49:03+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketPolicy s3.amazonaws.com NoSuchBucketPolicy",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchBucketPolicy",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchWebsiteConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:49:04+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-02-26 18:49:10+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-02-26 18:49:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-02-26 18:49:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-02-26 18:49:11+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-03-14 03:00:02+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-03-14 03:00:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-03-14 03:00:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-03-14 03:00:02+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-03-14 03:00:19+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-03-14 03:00:19+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-03-14 03:00:19+00:00",
+      "source_ip": "AWS Internal",
+      "user_arn": "811596193553",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-03-14 03:00:19+00:00",
+      "source_ip": "255.253.125.115",
+      "user_arn": "811596193553",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    }
+  ],
+  "anomaly_ratio": 0.3333333333333333
+}

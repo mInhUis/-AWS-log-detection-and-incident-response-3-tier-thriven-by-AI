@@ -69,6 +69,15 @@ from src.preprocessing.normalize import normalize_event
 from src.tier1_ml.baseline import HourBaseline
 
 # ---------------------------------------------------------------------------
+#  Module-level constants
+# ---------------------------------------------------------------------------
+
+# Maximum flagged events forwarded to Tier 3 per session.  Llama's 2048-token
+# context window fills quickly; exceeding it causes the model to ignore the
+# system prompt and produce unstructured output instead of the 5-section report.
+MAX_TIER3_EVENTS: Final[int] = 30
+
+# ---------------------------------------------------------------------------
 #  CascadeResult — structured output of a complete cascade run
 # ---------------------------------------------------------------------------
 
@@ -567,6 +576,22 @@ class CascadePipeline:
                 oov_key=oov_key,
             )
 
+            # ---- Cap flagged events before Tier 3 to avoid prompt overflow --
+            # Llama's 2048-token context fills quickly with long event lists;
+            # exceeding it causes the model to ignore the system prompt entirely
+            # and produce garbage output instead of the 5-section report.
+            # Chronological order is preserved because reverse_map_events()
+            # already returns events sorted by position in the original sequence.
+            # anomaly_ratio is calculated from the FULL count so the metric is
+            # not artificially deflated by the cap.
+            original_count: int = len(enriched)
+            if original_count > MAX_TIER3_EVENTS:
+                print(
+                    f"[Cascade] Session {session_id}: truncated {original_count} "
+                    f"flagged events to {MAX_TIER3_EVENTS}"
+                )
+                enriched = enriched[:MAX_TIER3_EVENTS]
+
             # ---- Assemble LlamaResponder context -------------------------
             drain_templates: list[str] = [e["drain_template"] for e in enriched]
             event_names: list[str]     = [e["event_name"]     for e in enriched]
@@ -575,7 +600,9 @@ class CascadePipeline:
             user_arns: list[str]       = [e["user_arn"]       for e in enriched]
 
             n_total: int = len(sess_events)
-            n_flagged: int = len(enriched)
+            # Use original_count (pre-cap) so anomaly_ratio reflects the true
+            # proportion of anomalous events, not the truncated subset.
+            n_flagged: int = original_count
             anomaly_ratio: float = n_flagged / n_total if n_total > 0 else 0.0
 
             context: dict[str, Any] = {
@@ -587,6 +614,10 @@ class CascadePipeline:
                 "user_arns":     user_arns,
                 "event_names":   event_names,
             }
+            if original_count > MAX_TIER3_EVENTS:
+                # Inform the LLM that the event list was truncated so it does
+                # not infer completeness from the abbreviated sequence.
+                context["truncated_from"] = original_count
 
             # ---- RAG retrieval (graceful fallback if unavailable) --------
             # Build query from the first ≤6 distinct event names — enough

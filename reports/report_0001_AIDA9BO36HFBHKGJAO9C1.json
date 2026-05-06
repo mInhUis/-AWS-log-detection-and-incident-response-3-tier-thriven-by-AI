@@ -1,0 +1,277 @@
+{
+  "session_id": "AIDA9BO36HFBHKGJAO9C1",
+  "report_text": "## 1. Incident Summary\n\nDeepLog flagged 30 anomalous event(s) in session AIDA9BO36HFBHKGJAO9C1.  The flagged API calls deviate from the normal CloudTrail activity baseline learned during training on synthetic normal data.\n\n## 2. Anomaly Analysis\n\n  - [2017-03-05 13:44:37+00:00] **GetBucketVersioning** from 252.123.210.192 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-05 13:44:37+00:00] **GetBucketWebsite** from 252.123.210.192 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-05 13:44:37+00:00] **GetBucketLogging** from 252.123.210.192 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-05 13:44:37+00:00] **GetBucketLogging** from 252.123.210.192 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-05 13:44:38+00:00] **GetBucketPolicy** from 252.123.210.192 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-05 13:44:38+00:00] **GetBucketPolicy** from 252.123.210.192 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-05 13:44:38+00:00] **GetBucketAcl** from 252.123.210.192 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketLogging** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketLogging** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketPolicy** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketWebsite** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketWebsite** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketAcl** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketVersioning** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketAcl** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketPolicy** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-08 10:23:58+00:00] **GetBucketVersioning** from 227.255.6.226 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-19 03:42:53+00:00] **GetBucketAcl** from 69.35.210.232 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-03-19 03:42:53+00:00] **GetBucketAcl** from 69.35.210.232 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketLogging** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketWebsite** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketPolicy** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketLogging** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketVersioning** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketAcl** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketWebsite** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketVersioning** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketPolicy** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-13 18:13:07+00:00] **GetBucketAcl** from 34.204.247.247 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n  - [2017-05-18 22:56:44+00:00] **GetBucketAcl** from 250.223.228.119 (identity: AIDA9BO36HFBHKGJAO9C1)\n    Template: `<OOV: unknown event>`\n    Deviation: this event was not among the top-k predicted next events by the DeepLog LSTM, indicating it falls outside the learned normal sequence pattern.\n\n## 3. Severity Assessment\n\n**High** \u2014 58% of session events are anomalous, indicating a sustained deviation from the normal behaviour baseline.\n\n## 4. Attack Pattern Classification\n\nNo direct MITRE ATT&CK mapping identified from event names alone.  Manual review recommended.\n\n## 5. Recommended Mitigation\n\n1. Immediately review IAM activity for the affected identities in the AWS Console.\n2. Rotate or revoke access keys associated with the flagged ARNs.\n3. Enable CloudTrail log-file validation if not already active.\n4. Restrict overly permissive IAM policies identified in the flagged events.\n5. Escalate to the security operations team for deeper forensic investigation.\n\n---\n**[MOCK MODE \u2014 report generated without Llama-3 inference.  Requires analyst review before any action.]**",
+  "flagged_events": [
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-03-05 13:44:37+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-03-05 13:44:37+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-03-05 13:44:37+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-03-05 13:44:37+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-03-05 13:44:38+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-03-05 13:44:38+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-05 13:44:38+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-19 03:42:53+00:00",
+      "source_ip": "69.35.210.232",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-19 03:42:53+00:00",
+      "source_ip": "69.35.210.232",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-05-18 22:56:44+00:00",
+      "source_ip": "250.223.228.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    }
+  ],
+  "anomaly_ratio": 0.5769230769230769
+}

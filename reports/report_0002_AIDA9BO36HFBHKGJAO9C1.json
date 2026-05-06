@@ -1,0 +1,5830 @@
+{
+  "session_id": "AIDA9BO36HFBHKGJAO9C1",
+  "report_text": "This appears to be a log file from an AWS S3 bucket, showing the access history of the bucket over several months.\n\nHere are some observations and insights that can be derived from this data:\n\n**Frequency of Access**: The logs show frequent access to the bucket by multiple IP addresses. This could indicate high usage or activity on the bucket.\n\n**IP Addresses**: There are many unique IP addresses accessing the bucket, which suggests that there may be multiple users or applications interacting with it.\n\n**Actions Performed**: Most actions performed on the bucket involve retrieving metadata (e.g., `GetBucketTagging`, `GetBucketVersioning`) rather than uploading or downloading files. This could indicate that the primary purpose of the bucket is to store configuration data or other non-essential content.\n\n**Patterns and Anomalies**: Upon closer inspection, some patterns emerge:\n\n* IP addresses 92.9.251.253 and 235.129.111.105 appear frequently throughout October.\n* There are multiple instances of `GetBucketEncryption` and `GetBucketLogging`, which could indicate that the bucket is being used for sensitive data or compliance purposes.\n\n**Potential Security Risks**: Given the high frequency of access by multiple IP addresses, it's essential to review the IAM permissions associated with this bucket. Ensure that only authorized users and applications have access to the bucket, and consider implementing additional security measures such as encryption, logging, and monitoring.\n\nTo further analyze these logs, you may want to:\n\n1. Filter the data by specific time ranges or IP addresses.\n2. Use AWS CloudTrail to correlate S3 events with other AWS services (e.g., IAM, EC2).\n3. Investigate any unusual patterns or anomalies in access frequency or behavior.\n4. Review and adjust IAM permissions as needed.\n\nPlease note that this analysis is based on a limited sample of logs and may not capture the full scope of activity associated with your S3 bucket.",
+  "flagged_events": [
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-03-05 13:44:37+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-03-05 13:44:37+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-03-05 13:44:37+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-03-05 13:44:37+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-03-05 13:44:38+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-03-05 13:44:38+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-05 13:44:38+00:00",
+      "source_ip": "252.123.210.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-03-08 10:23:58+00:00",
+      "source_ip": "227.255.6.226",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-19 03:42:53+00:00",
+      "source_ip": "69.35.210.232",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-03-19 03:42:53+00:00",
+      "source_ip": "69.35.210.232",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-05-13 18:13:07+00:00",
+      "source_ip": "34.204.247.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-05-18 22:56:44+00:00",
+      "source_ip": "250.223.228.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-06-24 00:42:44+00:00",
+      "source_ip": "146.163.251.0",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-07-04 13:15:31+00:00",
+      "source_ip": "13.17.253.98",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-07-30 09:46:04+00:00",
+      "source_ip": "252.138.62.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-07-30 09:46:04+00:00",
+      "source_ip": "252.138.62.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-07-30 10:05:41+00:00",
+      "source_ip": "252.138.62.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-07-30 10:05:41+00:00",
+      "source_ip": "252.138.62.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-07-30 11:05:12+00:00",
+      "source_ip": "252.138.62.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-07-30 11:05:12+00:00",
+      "source_ip": "252.138.62.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-08-01 23:46:09+00:00",
+      "source_ip": "162.71.158.0",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-08-01 23:46:38+00:00",
+      "source_ip": "162.71.158.0",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-08-03 12:16:30+00:00",
+      "source_ip": "188.150.190.250",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-08-09 11:28:00+00:00",
+      "source_ip": "252.138.62.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-08-09 11:28:00+00:00",
+      "source_ip": "252.138.62.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-09-22 05:10:58+00:00",
+      "source_ip": "175.204.252.1",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-03 11:59:21+00:00",
+      "source_ip": "243.107.241.73",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-03 11:59:23+00:00",
+      "source_ip": "243.107.241.73",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-03 12:39:05+00:00",
+      "source_ip": "243.107.241.73",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-03 12:39:06+00:00",
+      "source_ip": "243.107.241.73",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-17 09:35:52+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-10-17 09:35:52+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-10-17 09:35:52+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-10-17 09:35:52+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-10-17 09:35:52+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-10-17 09:35:52+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-10-17 09:35:52+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-10-17 09:35:52+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-17 09:35:53+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-10-17 09:35:53+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-10-17 09:37:56+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-10-17 09:37:56+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-10-17 09:37:56+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-10-17 09:37:57+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-10-17 09:37:57+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-17 09:37:57+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-10-17 09:37:57+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-10-17 09:37:57+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-10-17 09:37:57+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-17 09:37:57+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-10-17 09:38:40+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2017-10-17 09:38:40+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-10-17 09:38:41+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-17 09:38:41+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-10-17 09:38:41+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-10-17 09:38:41+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2017-10-17 09:38:41+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-10-17 09:38:41+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2017-10-17 09:38:41+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2017-10-17 09:38:41+00:00",
+      "source_ip": "24.98.217.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-11-02 22:20:44+00:00",
+      "source_ip": "209.4.255.8",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2017-11-02 22:21:04+00:00",
+      "source_ip": "209.4.255.8",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-01-12 13:54:31+00:00",
+      "source_ip": "254.254.67.109",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-01-21 13:26:15+00:00",
+      "source_ip": "14.48.246.176",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2018-02-24 23:25:04+00:00",
+      "source_ip": "230.184.254.177",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-02-27 00:05:08+00:00",
+      "source_ip": "151.36.140.220",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-03-27 17:24:46+00:00",
+      "source_ip": "216.224.1.8",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-03-27 17:25:03+00:00",
+      "source_ip": "216.224.1.8",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-05-05 06:13:18+00:00",
+      "source_ip": "57.133.173.225",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-05-05 06:13:27+00:00",
+      "source_ip": "57.133.173.225",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-06-11 02:14:42+00:00",
+      "source_ip": "1.221.181.250",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "NoSuchBucket",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-06-11 02:14:47+00:00",
+      "source_ip": "1.221.181.250",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-06-21 17:24:54+00:00",
+      "source_ip": "47.2.233.180",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-06-21 17:25:14+00:00",
+      "source_ip": "47.2.233.180",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-06-21 21:49:31+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-06-21 21:49:31+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-06-21 21:49:31+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-06-21 21:49:31+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-06-21 21:49:31+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-06-21 21:49:31+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-06-21 21:49:32+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-06-21 21:49:32+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-06-21 21:49:32+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-06-21 21:49:32+00:00",
+      "source_ip": "148.2.201.164",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-07-29 15:28:51+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-07-29 15:28:51+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-07-29 15:28:51+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-07-29 15:28:51+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-07-29 15:28:51+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-07-29 15:28:52+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-07-29 15:28:52+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-07-29 15:28:52+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-07-29 15:28:53+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-07-29 15:28:53+00:00",
+      "source_ip": "255.244.3.119",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-09-07 16:51:51+00:00",
+      "source_ip": "146.216.252.108",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-09-27 07:10:00+00:00",
+      "source_ip": "89.253.73.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-11-23 12:46:35+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-11-23 12:46:35+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-11-23 12:46:35+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-11-23 12:46:35+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-11-23 12:46:35+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-11-23 12:46:36+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-11-23 12:46:36+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-11-23 12:46:36+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-11-23 12:46:36+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-11-23 12:46:36+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-11-23 12:46:36+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-11-23 12:46:37+00:00",
+      "source_ip": "253.250.7.32",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-12-11 08:06:56+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-12-11 08:06:56+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-12-11 08:06:56+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-12-11 08:06:56+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-12-11 08:06:57+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-12-11 08:06:57+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-12-11 08:06:57+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-12-11 08:06:57+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-12-11 08:06:58+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-12-11 08:06:58+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-12-11 08:06:58+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-12-11 08:06:58+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-12-11 08:20:49+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-12-11 08:20:50+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-12-11 08:20:51+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-12-11 08:20:52+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-12-11 08:20:52+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-12-11 08:20:53+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-12-11 08:20:53+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-12-11 08:20:53+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-12-11 08:20:53+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-12-11 08:20:54+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-12-11 08:20:54+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-12-11 08:20:54+00:00",
+      "source_ip": "2.206.42.203",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-12-19 23:41:52+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-12-19 23:41:52+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-12-19 23:41:53+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-12-19 23:46:23+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-12-19 23:46:23+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-12-19 23:46:23+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2018-12-19 23:46:23+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2018-12-19 23:46:23+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-12-19 23:46:23+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2018-12-19 23:46:23+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-12-19 23:46:24+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-12-19 23:46:24+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2018-12-19 23:46:24+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2018-12-19 23:46:24+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2018-12-19 23:46:25+00:00",
+      "source_ip": "219.39.252.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-01-10 04:25:03+00:00",
+      "source_ip": "0.222.80.68",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-01-16 14:55:11+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-01-16 14:55:11+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-01-16 14:55:11+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-01-16 14:55:11+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-01-16 14:55:11+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-01-16 14:55:11+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-01-16 14:55:12+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-01-16 14:55:12+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-01-16 14:55:12+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-01-16 14:55:12+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-01-16 14:55:12+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-01-16 14:55:12+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-01-16 15:03:05+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-01-16 15:03:05+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-01-16 15:03:06+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-01-16 15:17:15+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-01-16 15:17:15+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-01-16 15:17:16+00:00",
+      "source_ip": "6.3.3.245",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-03-07 23:19:19+00:00",
+      "source_ip": "2.231.90.242",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-03-07 23:19:19+00:00",
+      "source_ip": "2.231.90.242",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-03-07 23:19:21+00:00",
+      "source_ip": "2.231.90.242",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-03-07 23:19:21+00:00",
+      "source_ip": "2.231.90.242",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2019-03-17 19:52:42+00:00",
+      "source_ip": "34.250.215.195",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketRequestPayment",
+      "timestamp": "2019-03-17 19:52:42+00:00",
+      "source_ip": "34.250.215.195",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-03-17 19:54:03+00:00",
+      "source_ip": "34.250.215.195",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketLocation s3.amazonaws.com NoSuchBucket",
+      "event_name": "GetBucketLocation",
+      "timestamp": "2019-03-17 19:54:29+00:00",
+      "source_ip": "34.250.215.195",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "NoSuchBucket",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2019-03-17 19:55:00+00:00",
+      "source_ip": "34.250.215.195",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketRequestPayment",
+      "timestamp": "2019-03-17 19:55:00+00:00",
+      "source_ip": "34.250.215.195",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-03-31 21:36:13+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-03-31 21:36:15+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-03-31 21:36:16+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketNotification",
+      "timestamp": "2019-03-31 21:36:17+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2019-03-31 21:36:18+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketRequestPayment",
+      "timestamp": "2019-03-31 21:36:18+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-03-31 21:36:18+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:36:19+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-03-31 21:36:19+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2019-03-31 21:36:20+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2019-03-31 21:36:20+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-03-31 21:36:20+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:36:21+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-03-31 21:36:42+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-03-31 21:36:43+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-03-31 21:36:45+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketNotification",
+      "timestamp": "2019-03-31 21:36:46+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-03-31 21:36:46+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketRequestPayment",
+      "timestamp": "2019-03-31 21:36:47+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2019-03-31 21:36:47+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-03-31 21:36:48+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:36:48+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-03-31 21:36:48+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2019-03-31 21:36:49+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2019-03-31 21:36:49+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:36:50+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-03-31 21:37:27+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-03-31 21:37:28+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-03-31 21:37:30+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-03-31 21:37:31+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketNotification",
+      "timestamp": "2019-03-31 21:37:31+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2019-03-31 21:37:32+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:37:37+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketRequestPayment",
+      "timestamp": "2019-03-31 21:37:37+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-03-31 21:43:24+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-03-31 21:43:26+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-03-31 21:43:27+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketNotification",
+      "timestamp": "2019-03-31 21:43:28+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketRequestPayment",
+      "timestamp": "2019-03-31 21:43:29+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2019-03-31 21:43:29+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-03-31 21:43:29+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:43:30+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-03-31 21:43:30+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2019-03-31 21:43:31+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-03-31 21:43:31+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:43:32+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2019-03-31 21:43:32+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-03-31 21:43:51+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-03-31 21:43:53+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-03-31 21:43:54+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketNotification",
+      "timestamp": "2019-03-31 21:43:55+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2019-03-31 21:43:56+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketRequestPayment",
+      "timestamp": "2019-03-31 21:43:56+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-03-31 21:43:56+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:43:57+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-03-31 21:43:57+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2019-03-31 21:43:58+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2019-03-31 21:43:58+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-03-31 21:43:58+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:43:59+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-03-31 21:44:15+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-03-31 21:44:17+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-03-31 21:44:18+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-03-31 21:44:19+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketNotification",
+      "timestamp": "2019-03-31 21:44:19+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketRequestPayment",
+      "timestamp": "2019-03-31 21:44:20+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2019-03-31 21:44:20+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-03-31 21:44:21+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-03-31 21:44:21+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:44:21+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2019-03-31 21:44:22+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2019-03-31 21:44:22+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-03-31 21:44:23+00:00",
+      "source_ip": "84.252.252.117",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-04-12 03:54:55+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-04-12 03:54:55+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-04-12 03:54:55+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-04-12 03:54:55+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-04-12 03:54:56+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-04-12 03:54:56+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-04-12 03:54:56+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-04-12 03:54:56+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-04-12 03:54:56+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-04-12 03:54:56+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-04-12 03:54:56+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-04-12 03:54:56+00:00",
+      "source_ip": "147.249.23.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-05-27 08:10:04+00:00",
+      "source_ip": "93.176.3.8",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-06-06 05:52:09+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-06-06 05:52:09+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-06-06 05:52:10+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-06-06 05:52:10+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-06-06 05:52:10+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-06-06 05:52:10+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-06-06 05:52:10+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-06-06 05:52:10+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-06-06 05:52:11+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-06-06 05:52:11+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-06-06 05:52:11+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-06-06 05:52:11+00:00",
+      "source_ip": "1.7.251.207",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-07-08 15:21:58+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-07-08 15:21:59+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-07-08 15:21:59+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-07-08 15:21:59+00:00",
+      "source_ip": "251.209.251.231",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-09 01:39:33+00:00",
+      "source_ip": "1.97.123.147",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-09 01:39:34+00:00",
+      "source_ip": "1.97.123.147",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-12 11:32:55+00:00",
+      "source_ip": "55.250.102.14",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-12 11:32:55+00:00",
+      "source_ip": "55.250.102.14",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-12 12:08:43+00:00",
+      "source_ip": "55.250.102.14",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-12 12:17:02+00:00",
+      "source_ip": "55.250.102.14",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-12 12:17:03+00:00",
+      "source_ip": "55.250.102.14",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-12 12:17:44+00:00",
+      "source_ip": "55.250.102.14",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-12 12:17:44+00:00",
+      "source_ip": "55.250.102.14",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-12 13:41:29+00:00",
+      "source_ip": "253.1.250.243",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-07-22 17:10:51+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-22 17:10:52+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-07-22 17:10:52+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-07-22 17:23:36+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-07-22 17:23:36+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-07-22 17:23:36+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-07-22 17:23:36+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-07-22 17:23:36+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-07-22 17:23:36+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-22 17:23:36+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-07-22 17:23:36+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-07-22 17:23:37+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-07-22 17:23:37+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-07-22 17:23:37+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-07-22 17:23:37+00:00",
+      "source_ip": "211.111.151.81",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-07-30 01:36:36+00:00",
+      "source_ip": "140.178.2.6",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-08-05 22:02:48+00:00",
+      "source_ip": "254.7.6.255",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-08-05 22:02:52+00:00",
+      "source_ip": "254.7.6.255",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2019-08-16 03:30:33+00:00",
+      "source_ip": "253.7.252.199",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-08-16 08:51:12+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-08-16 08:51:12+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-08-16 08:51:12+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-08-16 08:51:12+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-08-16 08:51:12+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-08-16 08:51:12+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-08-16 08:51:12+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-08-16 08:51:12+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-08-16 08:51:13+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-08-16 08:51:13+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-08-16 08:51:13+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-08-16 08:51:13+00:00",
+      "source_ip": "129.5.8.15",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-08-20 15:01:55+00:00",
+      "source_ip": "252.170.3.216",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2019-09-10 16:09:11+00:00",
+      "source_ip": "155.243.196.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-01 19:11:09+00:00",
+      "source_ip": "128.59.226.123",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2019-10-04 13:57:09+00:00",
+      "source_ip": "143.252.238.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-29 19:13:37+00:00",
+      "source_ip": "7.231.8.98",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-29 19:14:21+00:00",
+      "source_ip": "7.231.8.98",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-29 19:14:25+00:00",
+      "source_ip": "7.231.8.98",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-29 19:15:10+00:00",
+      "source_ip": "7.231.8.98",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-29 19:15:15+00:00",
+      "source_ip": "7.231.8.98",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-29 19:16:45+00:00",
+      "source_ip": "7.231.8.98",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-10-29 19:20:29+00:00",
+      "source_ip": "7.231.8.98",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-11-03 17:49:01+00:00",
+      "source_ip": "251.202.162.88",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-11-03 17:49:01+00:00",
+      "source_ip": "251.202.162.88",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-11-03 17:49:18+00:00",
+      "source_ip": "251.202.162.88",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-11-03 17:49:19+00:00",
+      "source_ip": "251.202.162.88",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-11-03 17:51:08+00:00",
+      "source_ip": "251.202.162.88",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-11-03 17:51:08+00:00",
+      "source_ip": "251.202.162.88",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-11-17 04:46:38+00:00",
+      "source_ip": "8.103.248.255",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2019-11-17 05:15:38+00:00",
+      "source_ip": "8.103.248.255",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2019-11-17 05:16:21+00:00",
+      "source_ip": "129.90.254.255",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2019-11-17 05:22:04+00:00",
+      "source_ip": "8.103.248.255",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-12-27 22:00:14+00:00",
+      "source_ip": "2.254.2.179",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-12-27 22:00:21+00:00",
+      "source_ip": "2.254.2.179",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2019-12-27 22:03:11+00:00",
+      "source_ip": "2.254.2.179",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-12-29 05:52:19+00:00",
+      "source_ip": "253.8.228.255",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2019-12-29 05:54:27+00:00",
+      "source_ip": "253.8.228.255",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-01-08 16:07:40+00:00",
+      "source_ip": "1.69.32.254",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-01-14 13:38:17+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-01-14 13:38:18+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-01-14 13:38:18+00:00",
+      "source_ip": "250.32.254.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "CreateBucket",
+      "timestamp": "2020-01-18 04:49:32+00:00",
+      "source_ip": "8.101.151.38",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-01-23 16:40:45+00:00",
+      "source_ip": "155.251.168.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-01-23 16:41:04+00:00",
+      "source_ip": "155.251.168.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-01-23 16:42:06+00:00",
+      "source_ip": "155.251.168.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-02-25 12:27:39+00:00",
+      "source_ip": "65.7.251.185",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-03-21 03:56:23+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-03-21 03:56:24+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-03-21 03:56:24+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-03-21 03:56:24+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-03-23 09:24:20+00:00",
+      "source_ip": "62.213.250.217",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-03-24 11:41:38+00:00",
+      "source_ip": "237.87.246.92",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-03-30 14:29:30+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-03-30 14:29:31+00:00",
+      "source_ip": "12.221.220.121",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-03-30 17:41:41+00:00",
+      "source_ip": "191.6.2.219",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-04-09 13:22:29+00:00",
+      "source_ip": "197.46.1.247",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-04-11 09:05:32+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-04-11 09:05:32+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-04-11 09:05:33+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-04-11 09:05:33+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-04-11 09:05:34+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-04-11 09:05:34+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-04-11 09:05:35+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-04-11 09:05:35+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-04-11 09:05:36+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-04-11 09:05:36+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-04-11 09:05:37+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-04-11 09:05:37+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-04-11 09:05:38+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-04-11 09:05:38+00:00",
+      "source_ip": "255.171.1.252",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-05-12 17:17:24+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-05-12 17:17:26+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-05-12 17:17:27+00:00",
+      "source_ip": "204.111.252.51",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2020-05-21 16:48:49+00:00",
+      "source_ip": "189.190.253.244",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-07-23 15:58:14+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-07-23 15:58:15+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-07-23 15:58:15+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-07-23 15:58:15+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-07-23 15:58:15+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-07-23 15:58:15+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-07-23 15:58:15+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-07-23 15:58:15+00:00",
+      "source_ip": "84.239.80.5",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2020-07-26 07:30:34+00:00",
+      "source_ip": "241.28.172.222",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-07-26 07:55:22+00:00",
+      "source_ip": "241.28.172.222",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-07-27 11:02:55+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-07-27 11:02:56+00:00",
+      "source_ip": "4.202.254.251",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-08-13 14:34:37+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-08-13 14:34:37+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-08-13 14:34:37+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-08-13 14:34:37+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-08-13 14:34:37+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-08-13 14:34:38+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-08-13 16:13:34+00:00",
+      "source_ip": "49.253.2.144",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-08-26 20:28:11+00:00",
+      "source_ip": "253.108.69.189",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2020-09-12 00:20:55+00:00",
+      "source_ip": "65.105.239.104",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-09-13 10:58:43+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-09-13 10:58:44+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-09-13 10:58:44+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-09-13 10:58:44+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-09-13 10:58:44+00:00",
+      "source_ip": "219.208.8.129",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-09-28 02:56:42+00:00",
+      "source_ip": "235.129.111.105",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "PutBucketWebsite",
+      "timestamp": "2020-10-02 05:39:18+00:00",
+      "source_ip": "253.237.6.192",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "InvalidArgument",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketVersioning",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPolicy",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLogging",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketWebsite",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketEncryption",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketAcl",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketPublicAccessBlock",
+      "timestamp": "2020-10-07 08:09:18+00:00",
+      "source_ip": "92.9.251.253",
+      "user_arn": "AIDA9BO36HFBHKGJAO9C1",
+      "error_code": "AccessDenied",
+      "target_resource": null
+    }
+  ],
+  "anomaly_ratio": 0.8107769423558897
+}

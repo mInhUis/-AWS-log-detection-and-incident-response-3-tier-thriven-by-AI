@@ -1,0 +1,124 @@
+{
+  "session_id": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+  "report_text": "**Incident Summary**\n\nAn anomalous sequence of API calls has been detected in the AWS CloudTrail logs, suggesting potential unauthorized access to an S3 bucket's configuration. The flagged events indicate a high frequency of GetBucket* operations from the same IP address.\n\n**Anomaly Analysis**\n\n1. **GetBucketTagging**: This event is suspicious because it indicates attempts to retrieve or modify tag settings for an S3 bucket. An adversary may be trying to delete tags, which could lead to unintended consequences.\n2. **GetBucketLifecycle**, **GetBucketCors**, and **GetBucketReplication**: These events are unusual in frequency and sequence, suggesting a potential attempt to manipulate the bucket's configuration.\n\n**Severity Assessment**\n\nCritical ( Severity rating: 9/10)\n\nThe anomaly ratio is high at 27.1%, indicating a significant deviation from normal behavior. The nature of the flagged API calls suggests an adversary may be attempting to modify or delete critical S3 bucket configurations, which could lead to data loss or unauthorized access.\n\n**Attack Pattern Classification**\n\nBased on the evidence, this incident maps to:\n\n* T1485.001: Lifecycle-Triggered Deletion (Impact)\n\t+ The frequent GetBucketLifecycle calls suggest an attempt to manipulate the bucket's lifecycle policies.\n* T1134.001: Token Impersonation/Theft is not directly supported by the flagged events.\n\n**Recommended Mitigation**\n\n1. **Immediate Action**: Investigate and verify the integrity of S3 buckets' configurations, particularly focusing on lifecycle policies and tag settings.\n2. **Block IP Address**: Temporarily block the source IP address (config.amazonaws.com) to prevent further unauthorized access.\n3. **Review IAM Permissions**: Review and adjust IAM permissions for users or roles that may have been compromised.\n\n**Note**\n\nThis report requires analyst review before any automated action is taken. Further investigation should be conducted to determine the root cause of this incident and ensure no data has been lost or compromised.",
+  "flagged_events": [
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-29 16:35:50+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-29 16:35:50+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-29 16:35:50+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-29 16:35:50+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-29 16:35:50+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-30 00:35:42+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-30 00:35:42+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-30 00:35:42+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-30 00:35:42+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketLifecycle",
+      "timestamp": "2017-05-30 00:35:43+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchLifecycleConfiguration",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketReplication",
+      "timestamp": "2017-05-30 00:35:43+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "ReplicationConfigurationNotFoundError",
+      "target_resource": null
+    },
+    {
+      "drain_template": "GetBucketTagging s3.amazonaws.com NoSuchTagSet",
+      "event_name": "GetBucketTagging",
+      "timestamp": "2017-05-30 00:35:43+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchTagSet",
+      "target_resource": null
+    },
+    {
+      "drain_template": "<OOV: unknown event>",
+      "event_name": "GetBucketCors",
+      "timestamp": "2017-05-30 00:35:43+00:00",
+      "source_ip": "config.amazonaws.com",
+      "user_arn": "AROASM3HWKK95VDO4HH81:AWSConfig-Describe",
+      "error_code": "NoSuchCORSConfiguration",
+      "target_resource": null
+    }
+  ],
+  "anomaly_ratio": 0.2708333333333333
+}
