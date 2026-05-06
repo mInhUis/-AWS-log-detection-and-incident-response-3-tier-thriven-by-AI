@@ -102,13 +102,26 @@ def reverse_map_events(
             )
 
         result.append({
-            "drain_template":   drain_template,
-            "event_name":       _extract_event_name(raw),
-            "timestamp":        raw.get("eventTime", "N/A"),
-            "source_ip":        raw.get("sourceIPAddress", "N/A"),
-            "user_arn":         _extract_user_arn(raw),
-            "error_code":       raw.get("errorCode") or None,  # "" → None
-            "target_resource":  _extract_target_resource(raw),
+            "drain_template":  drain_template,
+            "event_name":      _extract_event_name(raw),
+            # Timestamp: try raw CloudTrail camelCase, then processed snake_case
+            "timestamp":       (
+                raw.get("eventTime")
+                or raw.get("event_time")
+                or "N/A"
+            ),
+            # Source IP: CloudTrail uses sourceIPAddress; processed uses source_ip
+            "source_ip":       (
+                raw.get("sourceIPAddress")
+                or raw.get("source_ip")
+                or "N/A"
+            ),
+            "user_arn":        _extract_user_arn(raw),
+            # errorCode vs error_code; treat empty string as success (None)
+            "error_code":      (
+                raw.get("errorCode") or raw.get("error_code") or None
+            ),
+            "target_resource": _extract_target_resource(raw),
         })
 
     return result
@@ -120,32 +133,34 @@ def reverse_map_events(
 
 
 def _extract_event_name(raw: dict[str, Any]) -> str:
-    """Return the CloudTrail eventName, defaulting to '<unknown>'."""
-    return str(raw.get("eventName", "<unknown>"))
+    """Return the event name from either camelCase or snake_case schema."""
+    return str(raw.get("eventName") or raw.get("event_name") or "<unknown>")
 
 
 def _extract_user_arn(raw: dict[str, Any]) -> str:
-    """Extract the canonical user identity string from either schema.
+    """Extract the canonical user identity string from any supported schema.
 
     Preference order:
-      1. userIdentity.arn  (nested AWS schema — most explicit)
+      1. userIdentity.arn      (nested AWS raw CloudTrail schema)
       2. userIdentity.principalId / userName  (nested schema fallback)
-      3. principalId at top level  (flat synthetic schema)
+      3. principalId           (flat camelCase synthetic schema)
+      4. principal_id          (processed snake_case schema from ingest.py)
     """
     uid = raw.get("userIdentity")
     if isinstance(uid, dict):
-        # Official nested schema: .arn is the full identity ARN.
         arn = uid.get("arn")
         if arn:
             return str(arn)
-        # Some event types (e.g., anonymous S3) omit .arn; try principalId.
         pid = uid.get("principalId") or uid.get("userName")
         if pid:
             return str(pid)
-    # Flat synthetic schema: principalId at top level.
-    pid_flat = raw.get("principalId")
-    if pid_flat:
-        return str(pid_flat)
+    pid_camel = raw.get("principalId")
+    if pid_camel:
+        return str(pid_camel)
+    # Processed schema: principal_id is already a human-readable ID string.
+    pid_snake = raw.get("principal_id")
+    if pid_snake:
+        return str(pid_snake)
     return "N/A"
 
 

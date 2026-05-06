@@ -306,8 +306,16 @@ class CascadePipeline:
             CascadeResult with incident reports and per-tier cost metrics.
         """
         if message_fn is None:
-            # Default: event name only.  Matches the simplest Drain training setup.
-            message_fn = lambda e: e.get("eventName", "<unknown>")
+            # Drain was trained on "{event_name} {event_source}" (2-token) or
+            # "{event_name} {event_source} {error_code}" (3-token) messages.
+            # Both schemas (snake_case processed + camelCase raw) are covered.
+            # Sending only event_name (1 token) causes 100% OOV — DO NOT shorten.
+            def message_fn(e: dict) -> str:
+                name   = e.get("event_name")   or e.get("eventName")   or "<unknown>"
+                source = e.get("event_source")  or e.get("eventSource") or ""
+                error  = e.get("error_code")    or e.get("errorCode")   or ""
+                parts  = [p for p in [name, source, error] if p]
+                return " ".join(parts)
 
         total_start: float = time.perf_counter()
 
@@ -469,7 +477,9 @@ class CascadePipeline:
             by_principal.setdefault(pid, []).append(e)
 
         for pid in by_principal:
-            by_principal[pid].sort(key=lambda e: e.get("eventTime", ""))
+            by_principal[pid].sort(
+                key=lambda e: e.get("event_time") or e.get("eventTime") or ""
+            )
 
         # ---- Drain vocabulary (read-only, same state as training) --------
         templates: dict[int, str] = self._drain.get_templates()
@@ -621,20 +631,29 @@ def _all_principals(events: list[dict[str, Any]]) -> set[str]:
 
 
 def _principal_id(event: dict[str, Any]) -> str:
-    """Extract principal_id from either nested (AWS) or flat (synthetic) schema.
+    """Extract principal_id from any supported schema.
 
-    Preference:
-      1. userIdentity.principalId  (nested AWS schema)
+    Preference order:
+      1. userIdentity.principalId  (nested AWS raw CloudTrail schema)
       2. userIdentity.userName     (nested fallback for root/IAM users)
       3. userIdentity.arn          (last resort in nested schema)
-      4. principalId at top level  (flat synthetic schema)
+      4. principalId               (flat camelCase synthetic schema)
+      5. principal_id              (processed snake_case schema from ingest.py)
     """
     uid = event.get("userIdentity")
     if isinstance(uid, dict):
         pid = uid.get("principalId") or uid.get("userName") or uid.get("arn")
         if pid:
             return str(pid)
-    return str(event.get("principalId", "<unknown>"))
+    # Flat camelCase synthetic schema
+    pid_camel = event.get("principalId")
+    if pid_camel:
+        return str(pid_camel)
+    # Processed snake_case schema (output of ingest.load_events())
+    pid_snake = event.get("principal_id")
+    if pid_snake:
+        return str(pid_snake)
+    return "<unknown>"
 
 
 def _build_events_dataframe(events: list[dict[str, Any]]) -> pd.DataFrame:
@@ -644,12 +663,18 @@ def _build_events_dataframe(events: list[dict[str, Any]]) -> pd.DataFrame:
         event_time (datetime64[ns, UTC]), event_name, event_source,
         principal_id, entity_type, error_code, aws_region, _source.
 
-    Rows with unparseable eventTime are kept (substituting pd.Timestamp.now)
-    rather than dropped — losing entire events would silently undercount
-    sensitive_action_count and other features.
+    Supports three input schemas detected automatically from the first event:
+      - Processed snake_case (ingest.load_events() output): event_name,
+        event_time, principal_id, source_ip, error_code, aws_region, _source.
+        This is the common case when running from processed JSONL files.
+      - Flat camelCase synthetic: eventName, eventTime, principalId, entityType.
+      - Nested AWS official: userIdentity dict, eventName, awsRegion.
+
+    Rows with unparseable timestamps are kept (current UTC substituted) rather
+    than dropped — silently losing events would undercount sensitive_action_count.
 
     Args:
-        events: Raw CloudTrail dicts in any order.
+        events: Event dicts in any supported schema, any order.
 
     Returns:
         Typed DataFrame.  Empty if events is empty.
@@ -657,46 +682,70 @@ def _build_events_dataframe(events: list[dict[str, Any]]) -> pd.DataFrame:
     if not events:
         return pd.DataFrame()
 
+    # ---- Schema detection ------------------------------------------------
+    # The processed schema (output of ingest.load_events / run_day2.py) uses
+    # snake_case keys.  Detecting from the first event is sufficient — the
+    # pipeline never mixes schemas within a single JSONL file.
+    _is_processed: bool = "event_name" in events[0]
+
     rows: list[dict[str, Any]] = []
     n_bad_ts: int = 0
 
     for raw in events:
-        norm = normalize_event(raw)
+        # ---- Field extraction (schema-specific) --------------------------
+        if _is_processed:
+            # Snake_case processed schema — fields are ready to use directly.
+            # event_time may be "2023-01-01 13:19:35+00:00" (space separator)
+            # or "2023-01-01T13:19:35Z"; pd.Timestamp handles both.
+            ts_str: str = str(raw.get("event_time", ""))
+            event_name: str  = str(raw.get("event_name",   "<unknown>"))
+            event_source: str = str(raw.get("event_source", "<unknown>"))
+            principal_id: str = str(raw.get("principal_id", "<unknown>"))
+            entity_type: str  = str(raw.get("entity_type",  "<unknown>"))
+            error_code: str   = str(raw.get("error_code",   ""))
+            aws_region: str   = str(raw.get("aws_region",   "<unknown>"))
+            # _source already set correctly in processed data
+            source: str = str(raw.get("_source", "unknown"))
+        else:
+            # Raw CloudTrail (camelCase flat or nested) — use normalize_event.
+            norm = normalize_event(raw)
+            ts_str = norm["eventTime"]
+            event_name  = norm["eventName"]
+            event_source = norm["eventSource"]
+            principal_id = norm["principalId"]
+            entity_type  = norm["entityType"]
+            error_code   = norm["errorCode"]
+            aws_region   = str(raw.get("awsRegion", "<unknown>"))
+            source = "unknown"  # label unknown at inference time
 
-        # ---- Parse ISO-8601 UTC timestamp ---------------------------------
-        # CloudTrail eventTime is always UTC, e.g. "2024-01-01T10:00:00Z".
-        # pd.Timestamp handles both "Z" and "+00:00" suffixes correctly.
+        # ---- Timestamp parse --------------------------------------------
         try:
-            event_time = pd.Timestamp(norm["eventTime"], tz="UTC")
+            event_time = pd.Timestamp(ts_str, tz="UTC")
         except Exception:
-            # Malformed timestamp (e.g. in hand-crafted mock events).
-            # Use current time so the row is not silently discarded.
             event_time = pd.Timestamp.now(tz="UTC")
             n_bad_ts += 1
 
         rows.append({
             "event_time":   event_time,
-            "event_name":   norm["eventName"],
-            "event_source": norm["eventSource"],
-            "principal_id": norm["principalId"],
-            "entity_type":  norm["entityType"],
-            "error_code":   norm["errorCode"],
-            # awsRegion is top-level in BOTH schemas; not exposed by NormalizedEvent.
-            "aws_region":   str(raw.get("awsRegion", "<unknown>")),
+            "event_name":   event_name,
+            "event_source": event_source,
+            "principal_id": principal_id,
+            "entity_type":  entity_type,
+            "error_code":   error_code,
+            "aws_region":   aws_region,
             # _source is required by aggregate_features() for window labelling.
-            # At inference time we don't know the label — "unknown" causes the
-            # window to be labelled "mixed" (not "flaws_cloud"), which is safe.
-            "_source":      "unknown",
+            # For inference on processed data, preserve the original label so
+            # the metrics reflect reality; for raw inference use "unknown".
+            "_source":      source,
         })
 
     if n_bad_ts > 0:
         print(
             f"[cascade] WARNING: {n_bad_ts}/{len(events)} events had "
-            f"unparseable eventTime — substituted with current UTC timestamp."
+            f"unparseable event_time — substituted with current UTC timestamp."
         )
 
     df: pd.DataFrame = pd.DataFrame(rows)
-    # Ensure UTC timezone is preserved after DataFrame construction.
     df["event_time"] = pd.to_datetime(df["event_time"], utc=True)
     return df
 
